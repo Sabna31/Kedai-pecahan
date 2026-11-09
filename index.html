@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kedai Pecahan — Belajar Pecahan sambil Menjadi Koki Cilik</title>
+<!-- Font opsional (butuh internet). Tanpa internet, otomatis memakai font bawaan perangkat. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div id="sceneTitle"></div>
+    <button id="btnGuru" class="ghost" title="Panduan guru">🔒 Guru</button>
+    <div id="scoreBadge" aria-live="polite">⭐ <span id="scoreVal">0</span></div>
+  </header>
+
+  <main id="stage" aria-live="polite"></main>
+
+  <footer id="bottombar">
+    <div id="picoWrap">
+      <div id="pico"></div>
+      <div id="bubble">Halo, Koki Cilik!</div>
+    </div>
+    <div id="controls">
+      <button class="btn soft" id="btnHelp">💡 Bantuan</button>
+      <button class="btn soft snd" id="btnSnd">🔊 Suara</button>
+      <button class="btn" id="btnNext" style="display:none">Berikutnya ▶</button>
+    </div>
+  </footer>
+</div>
+<div id="modal" role="dialog" aria-modal="true"></div>
+
+<script src="js/config.js"></script>
+<script src="js/xlsx-mini.js"></script>
+<script src="js/core.js"></script>
+<script src="js/scenes.js"></script>
+<script src="js/games.js"></script>
+<script src="js/guru.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
